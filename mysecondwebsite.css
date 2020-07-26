@@ -1,10 +1,4 @@
 body.first-page {
-    background-image: url(myselfcopy.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-body.second-page {
     background-color: white;
 }
 
@@ -81,10 +75,10 @@ body.second-page {
     font-family: 'Abel', sans-serif;
     font-size: 18px;
 }
-
-.button a:hover {
-    color: rgb(15, 15, 14)
+.button :hover {
+    color: rgba(255,255,255,0.6);
 }
+
 
 .button a:visited {
     color: black;
@@ -128,10 +122,6 @@ body.second-page {
     border: rgba(255,255,255,0.6) 2px solid;
     
 }
-#pictures img:hover {
-    filter: blur(4px);
-}
-
 
 .latest-travel {
     text-align: center;
@@ -177,9 +167,11 @@ body.second-page {
     margin-right: auto;
 }
 
-.latest-travel-picture-section {
+.latest-travel-picture-section img {
     display: flex;
     flex-direction: column;
+    object-fit: cover;
+    
 }
 
 .latest-travel-description-section {
@@ -208,8 +200,10 @@ body.second-page {
     color: black;
     font-family: 'Prata', serif;
     font-size: 15px;
-    text-align: center;
+    text-align: justify;
     margin-top: 60px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .discover {
@@ -240,15 +234,16 @@ body.second-page {
     text-align: center;
     font-family: 'Prata', serif;
     font-size: 25px;
-
-    border-top: solid 1px rgb(161, 155, 155)
 }
 
 .about-me-paragraph {
-    text-align: center;
+    text-align: justify;
     font-family: 'Prata', serif;
     font-size: 15px;
     margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+
 }
 
 /*FOOTER*/
