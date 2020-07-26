@@ -3,23 +3,21 @@ body.first-page {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 body.second-page {
     background-color: white;
-
 }
 
 /*FIRST-PAGE,WELCOME*/
+
 .welcome-heading {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 150px;
-
-    font-family: 'Merriweather', serif;
-
+    font-family: 'Abel', sans-serif;
     font-size: 30px;
     color: white;
-
 }
 
 .welcome-para {
@@ -27,8 +25,7 @@ body.second-page {
     flex-direction: row;
     justify-content: center;
     margin-top: 50px;
-
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel', sans-serif;
     font-size: 20px;
     color: white;
 }
@@ -37,60 +34,53 @@ body.second-page {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  
     background-color: transparent;
     color: white;
     border: 1px solid white;
     border-style: solid;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel', sans-serif;
     font-size: 15px;
-  
     width: 15%;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-  }
+}
 
-  /*SECOND-PAGE,ABOUT.ME*/
-  .introimage {
-    height: 300px;
+/*SECOND-PAGE,ABOUT.ME*/
+
+.introimage {
+    height: 100px;
     background-size: cover;
     background-position-y: 65%;
     opacity: 90%;
 }
-
 
 .title {
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel', sans-serif;
     font-size: 60px;
-
     margin-top: 50px;
 }
-  .nav {
+
+.nav {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
     margin-top: 10px;
-
 }
 
-.button {    
+.button {
     padding: 10px;
     margin: 10px;
-
     color: rgb(189, 146, 29);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel', sans-serif;
     font-size: 18px;
-    
 }
-
 
 .button a:hover {
     color: rgb(15, 15, 14)
@@ -105,29 +95,167 @@ body.second-page {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-  
-  .firstrow-picture-by-one {
-      
-    margin: 1px;
 }
 
-.latest-travel {
+.firstrow-picture-by-one {
+    margin: 1px;
+    position: relative;
+}
+
+.firstrow-picture-by-one img {
+    display: block;
+    object-fit: cover;
+}
+
+.border-image {
+    position: absolute;
+    border: white solid 1px;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    align-items: flex-end;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+.border-image:hover {
+    color: rgba(255,255,255,0.6);
+    border: rgba(255,255,255,0.6) 2px solid;
+    
+}
+#pictures img:hover {
+    filter: blur(4px);
 }
 
-#latest-travel-section{
+
+.latest-travel {
+    text-align: center;
+    color: black;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.latest-travel span {
+    display: inline-block;
+    position: relative;
+}
+
+.latest-travel span:before, .latest-travel span:after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    border-bottom: 1px solid rgb(161, 155, 155);
+    top: 0;
+    width: 530px;
+}
+
+.latest-travel span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.latest-travel span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+#latest-travel-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
-    margin-left: 50px;
-    margin-right: 50px;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.latest-travel-picture-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.latest-travel-description-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.latest-travel-title {
+    color: rgb(129, 16, 16);
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.latest-travel-subtitle {
+    color: black;
+    font-family: 'Prata', serif;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.latest-travel-paragraph {
+    color: black;
+    font-family: 'Prata', serif;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.discover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    border: 1px solid black;
+    font-family: 'Prata', serif;
+    font-size: 10px;
+    width: 15%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+/*ABOUTE ME PARAGRAPH*/
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.about-me-title {
+    text-align: center;
+    font-family: 'Prata', serif;
+    font-size: 25px;
+
+    border-top: solid 1px rgb(161, 155, 155)
+}
+
+.about-me-paragraph {
+    text-align: center;
+    font-family: 'Prata', serif;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/*FOOTER*/
+.footer {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
