@@ -163,7 +163,7 @@ body.first-page {
   margin-left: 15px;
 }
 
-#latest-travel-section {
+.latest-travel-section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
