@@ -350,6 +350,38 @@ body.first-page {
   display: block;
   object-fit: cover;
 }
+/*IRELAND*/
+.cork-picture-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.panorama {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.ireland-section {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.second-cork-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*FOOTER*/
 .footer {
