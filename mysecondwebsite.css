@@ -2,6 +2,8 @@ body.first-page {
   background-color: white;
 }
 .dropdown-button {
+  display: flex;
+  flex-direction: row;
   padding: 10px;
   margin: 10px;
   color: black;
@@ -19,9 +21,12 @@ body.first-page {
 .dropdown-content {
   display: none;
   position: absolute;
+  padding-left: 0px;
   min-width: 160px;
   z-index: 1;
   list-style: none;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .dropdown-content a {
